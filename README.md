@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import stride2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/strided-base-stride2offset/tags). For example,
+
+```javascript
 import stride2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@v0.1.0-deno/mod.js';
 ```
 
@@ -89,7 +94,7 @@ offset = stride2offset( 10, -10 );
 
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
-import stride2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@v0.1.0-deno/mod.js';
+import stride2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@deno/mod.js';
 
 var opts = {
     'dtype': 'generic'
