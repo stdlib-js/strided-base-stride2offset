@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/strided-base-stride2offset",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Determine the index offset which specifies the location of the first indexed value in a strided array.",
   "license": "Apache-2.0",
   "author": {
