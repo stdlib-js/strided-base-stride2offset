@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import stride2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@deno/mod.js';
+import stride2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@v0.1.0-deno/mod.js';
 ```
 
 #### stride2offset( N, stride )
@@ -89,7 +89,7 @@ offset = stride2offset( 10, -10 );
 
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
-import stride2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@deno/mod.js';
+import stride2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@v0.1.0-deno/mod.js';
 
 var opts = {
     'dtype': 'generic'
