@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/strided-base-stride2offset
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-stride2offset = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var stride2offset = require( 'path/to/vendor/umd/strided-base-stride2offset/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.stride2offset;
-})();
-</script>
+var stride2offset = require( '@stdlib/strided-base-stride2offset' );
 ```
 
 #### stride2offset( N, stride )
@@ -111,14 +105,9 @@ offset = stride2offset( 10, -10 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var stride2offset = require( '@stdlib/strided-base-stride2offset' );
 
 var opts = {
     'dtype': 'generic'
@@ -143,18 +132,103 @@ for ( i = 0; i < strides.length; i++ ) {
     offset = stride2offset( N, strides[ i ] );
     console.log( 'stride = %d. arr[%d] = %d.', strides[ i ], offset, arr[ offset ] );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/strided/base/stride2offset.h"
+```
+
+#### stdlib_strided_stride2offset( N, stride )
+
+Returns the index offset which specifies the location of the first indexed value in a strided array.
+
+```c
+#include "stdlib/strided/base/stride2offset.h"
+#include <stdint.h>
+
+int64_t offset = stdlib_strided_stride2offset( 10, -10 );
+// returns 90
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] int64_t` number of indexed elements.
+-   **stride**: `[in] int64_t` index increment.
+
+```c
+int64_t stdlib_strided_stride2offset( int64_t N, int64_t stride );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/strided/base/stride2offset.h"
+#include <stdint.h>
+#include <stdio.h>
+#include <inttypes.h>
+
+int main( void ) {
+    // Specify the number of indexed elements:
+    int64_t N = 6;
+
+    // Define a stride:
+    int64_t stride = -2;
+
+    // Compute the offset:
+    int64_t offset = stdlib_strided_stride2offset( N, stride )
+
+    // Print the results:
+    printf( "stride: %"PRId64" => offset: %"PRId64"\n", stride, offset );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
@@ -198,7 +272,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
