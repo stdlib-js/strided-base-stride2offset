@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import stride2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/strided-base-stride2offset/tags). For example,
+
+```javascript
 import stride2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@v0.1.1-esm/index.mjs';
 ```
 
@@ -94,7 +99,7 @@ offset = stride2offset( 10, -10 );
 <script type="module">
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
-import stride2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@v0.1.1-esm/index.mjs';
+import stride2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@esm/index.mjs';
 
 var opts = {
     'dtype': 'generic'
