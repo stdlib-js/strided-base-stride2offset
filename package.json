@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/strided-base-stride2offset",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Determine the index offset which specifies the location of the first indexed value in a strided array.",
   "license": "Apache-2.0",
   "author": {
@@ -39,7 +39,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/utils-library-manifest": "^0.2.2"
+    "@stdlib/utils-library-manifest": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/assert-is-integer": "^0.2.2",
@@ -76,7 +76,6 @@
     "utils",
     "util"
   ],
-  "__stdlib__": {},
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/stdlib"
