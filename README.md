@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import stride2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@esm/index.mjs';
+import stride2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@v0.1.1-esm/index.mjs';
 ```
 
 #### stride2offset( N, stride )
@@ -94,7 +94,7 @@ offset = stride2offset( 10, -10 );
 <script type="module">
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
-import stride2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@esm/index.mjs';
+import stride2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-stride2offset@v0.1.1-esm/index.mjs';
 
 var opts = {
     'dtype': 'generic'
